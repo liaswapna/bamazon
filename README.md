@@ -18,7 +18,7 @@ Amazon-like storefront with MySQL.
 * Node js
 * MySQL
 
-## Dependencies
+### Dependencies
 ---
 ```js
 {
