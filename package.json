@@ -2,7 +2,7 @@
   "name": "bamazon",
   "version": "1.0.0",
   "description": "",
-  "main": "bamazonCustomer.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/liaswapna/bamazon/issues"
   },
-  "homepage": "https://github.com/liaswapna/bamazon#readme"
+  "homepage": "https://github.com/liaswapna/bamazon#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "colors": "^1.3.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "inquirer": "^6.2.1",
+    "mysql": "^2.16.0"
+  }
 }
