@@ -53,7 +53,7 @@ class BamazonOperations {
 
   // function to get the low inventory
   getLowInventory(productTable) {
-    let lowInventory = productTable.filter((data) => data.stock_quantity < 40)
+    let lowInventory = productTable.filter((data) => data.stock_quantity < 10)
     this.displayProductTable(lowInventory);
   }
 
@@ -89,7 +89,7 @@ class BamazonOperations {
       [quantity, (quantity * price).toFixed(2), id],
       (err, results, fields) => {
         if (err) throw err
-        console.log('TOTAL PRICE: $%d'.bold.blue, (quantity * price).toFixed(2))
+        console.log('TOTAL PRICE: $%d'.bold.cyan, (quantity * price).toFixed(2))
         this.getDataProductTable(process)
       }
     )

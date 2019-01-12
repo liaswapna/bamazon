@@ -18,7 +18,7 @@ function managerPrompt(ProductTable){
         {
             type: 'rawlist',
             name: 'option',
-            message: 'Select your Option: ',
+            message: 'Select your Option: '.white,
             choices: ['View Products for Sale','View Low Inventory','Add to Inventory','Add New Product','Exit']
         }
     ])
@@ -48,7 +48,7 @@ function addInventoryPrompt(){
         {
             type: 'input',
             name: 'id',
-            message: 'Enter the product ID: ',
+            message: 'Enter the product ID: '.white,
             validate: input => {
                 if(isNaN(input) || input < 1) return 'Enter a positive number'
                 if(!managerOperations.findProduct(input)) return 'Enter a valid product ID'
@@ -58,7 +58,7 @@ function addInventoryPrompt(){
         {
             type: 'input',
             name: 'quantity',
-            message: 'Enter the quantity you would like to add: ',
+            message: 'Enter the quantity you would like to add: '.white,
             validate: input => {
                 if(isNaN(input) || input < 1) return 'Enter a positive number'
                 return true
@@ -81,7 +81,7 @@ function addNewProductPrompt(){
             {
                 type: 'input',
                 name: 'product',
-                message: 'Enter the Product Name: ',
+                message: 'Enter the Product Name: '.white,
                 validate: input =>{
                         if(!input) return 'Required field'.red
                         return true
@@ -90,13 +90,13 @@ function addNewProductPrompt(){
             {
                 type: 'list',
                 name: 'department',
-                message: 'Choose the department: ',
+                message: 'Choose the department: '.white,
                 choices: departmentArray
             },
             {
                 type: 'input',
                 name: 'price',
-                message: 'Enter the price of the product: ',
+                message: 'Enter the price of the product: '.white,
                 validate: input =>{
                     if(isNaN(input) || input < 1) return 'Enter a valid price'
                     if(!input) return 'Required field'
@@ -106,7 +106,7 @@ function addNewProductPrompt(){
             {
                 type: 'input',
                 name: 'stock',
-                message: 'Enter the stock quantity: ',
+                message: 'Enter the stock quantity: '.white,
                 validate: input =>{
                     if(isNaN(input) || input < 1) return 'Enter a positive number as quantity'
                     if(!input) return 'Required field'

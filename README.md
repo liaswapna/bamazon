@@ -51,6 +51,6 @@ Amazon-like storefront with MySQL.
 
 ### Demos
 ---
-* [watch the demo video Customer View]()
-* [watch the demo video Manager View]()
-* [watch the demo video Supervisor View]()
+* [watch the demo video Customer View](https://drive.google.com/file/d/1sfHh_Xpy8NZrH33jkEApgwRMfFS2DY9E/view)
+* [watch the demo video Manager View](https://drive.google.com/file/d/1uC6LkDol39efRUeGAgrRjVJVRAitLJGS/view)
+* [watch the demo video Supervisor View](https://drive.google.com/file/d/1aGPxZtw7ZgRDAiLObHlJEAGUUkvbBPsk/view)

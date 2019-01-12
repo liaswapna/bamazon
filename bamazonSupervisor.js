@@ -19,7 +19,7 @@ function supervisorPrompt(departmentTable){
         {
             type: 'rawlist',
             name: 'option',
-            message: 'Select your option: ',
+            message: 'Select your option: '.white,
             choices: ['View Departments table','View Product Sales by Department','Create New Department','Exit']
         }
     ])
@@ -44,7 +44,7 @@ function addNewDepartmentPrompt(){
         {
             type: 'input',
             name: 'department',
-            message: 'Enter the Department Name: ',
+            message: 'Enter the Department Name: '.white,
             validate: input =>{
                 if(!input) return 'Required field'
                 return true
@@ -53,7 +53,7 @@ function addNewDepartmentPrompt(){
         {
             type: 'input',
             name: 'overhead',
-            message: 'Enter the overhead costs',
+            message: 'Enter the overhead costs'.white,
             validate: input =>{
                 if(!input) return 'Required field'
                 if(isNaN(input)) return 'Enter valid cost value'
